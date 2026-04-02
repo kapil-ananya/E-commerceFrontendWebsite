@@ -1,20 +1,26 @@
+// images ko screen pr slider krna ek ke baad ek show krnaa ek hi box ke 
 function nextSlide(sliderId) {
   let slider = document.getElementById(sliderId);
   let slides = slider.querySelectorAll(".slide");
   let active = slider.querySelector(".active");
 
+  // first me active hai abhi by indexOf 
   let index = Array.from(slides).indexOf(active);
+  // active wali image ko classlist se remove krna
   active.classList.remove("active");
-
+// or nayi wali image show krana
   let nextIndex = index + 1;
+  // yeh check krna if nextIndex agar slides ki length se bada or equal hai to 0 pr aa jana dubara se
+  
   if (nextIndex >= slides.length) {
     nextIndex = 0;
   }
 
+// next index ko active kr dena using classlist se
   slides[nextIndex].classList.add("active");
 }
 
-// ✅ Products Data
+// products data which is shown on screen using renderProduct
 let items = [
   { id: 1, name: "Laptop", price: 50000, image: "/images/laptop2.jpeg" },
   { id: 2, name: "Phone", price: 70000, image: "/images/phone.jpeg" },
@@ -24,10 +30,11 @@ let items = [
   { id: 6, name: "Headphone", price: 4700, image: "/images/headphone2.jpeg" },
 ];
 
-// ✅ Render Products
+// show krna screen pr products ko 
 function renderProducts() {
   let html = "";
 
+  // har item ko foreach loop se pakadna
   items.forEach(item => {
     html += `
       <div class="product-card">
@@ -41,20 +48,21 @@ function renderProducts() {
     `;
   });
 
+  // show krana page pr images ko 
   let box = document.querySelector(".productBox");
   if (box) {
+    // naya element dalana productbox ke andar
     box.innerHTML = html;
   }
 }
 
-// ✅ View Product (IMPORTANT)
+
 function viewProduct(id) {
   let product = items.find(item => item.id === id);
   localStorage.setItem("selectedProduct", JSON.stringify(product));
   window.location.href = "/products/productdetails.html";
 }
 
-// ✅ Cart System
 function addToCart(name, price, image) {
   let cart = JSON.parse(localStorage.getItem("cart")) || [];
 
@@ -124,7 +132,7 @@ function updateCartCount() {
   }
 }
 
-// ✅ Run functions
+// 1. product ko screen pr render krna 
 renderProducts();
 loadCartPage();
 updateCartCount();
