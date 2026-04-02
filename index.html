@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>E-COMMERCE</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+  <nav class="navbar">
+    <h1 class="logo">ElectroMart</h1>
+
+    <div class="search-box">
+      <input type="text" placeholder="Search products..." />
+      <button>🔍</button>
+    </div>
+
+    <ul class="nav-links">
+      <li><a href="/index.html">Home</a></li>
+      <li><a href="/products/products.html">Products</a></li>
+      <li><a href="cart/cart.html">Cart</a></li>
+    </ul>
+  </nav>
+  </header>
+  <main>
+    <div id="banners">
+    <div class="left">
+      <img src="/images/banner1.jpeg" height="130px" width="500px">
+      </div>
+    <div class="right">
+      <img src="/images/two.jpeg" height="130px" width="450px">
+    </div>
+    </div>
+
+    <h2 class="heading-two">Shop by Category</h2>
+    <p class="para">Explore our wide range of electronic products</p>
+
+    <div class="container">
+
+  <!-- 1 Laptop -->
+  <div class="card">
+    <h3>Speaker</h3>
+    <div class="slider" id="slider1">
+      <button class="prev" onclick="prevSlide('slider1')"><</button>
+      <img src="/images/speaker1.jpeg" class="slide active">
+      <img src="/images/speaker2.jpeg" class="slide">
+      <img src="/images/speaker3.jpeg" class="slide">
+      <button class="next" onclick="nextSlide('slider1')">></button>
+    </div>
+  </div>
+
+  <!-- 2 Mobile -->
+  <div class="card">
+    <h3>Mobile</h3>
+    <div class="slider" id="slider2">
+      <button class="prev" onclick="prevSlide('slider2')"><</button>
+      <img src="/images/mobile1.jpeg" class="slide active">
+      <img src="/images/mobile2.jpeg" class="slide">
+      <img src="/images/mobile3.jpeg" class="slide">
+      <button class="next" onclick="nextSlide('slider2')">></button>
+    </div>
+  </div>
+
+  <!-- 3 Headphones -->
+  <div class="card">
+    <h3>Headphones</h3>
+    <div class="slider" id="slider3">
+      <button class="prev" onclick="prevSlide('slider3')"><</button>
+      <img src="/images/headphone1.jpeg" class="slide active">
+      <img src="/images/headphone2.jpeg" class="slide">
+      <img src="/images/headphone3.jpeg" class="slide">
+      <button class="next" onclick="nextSlide('slider3')">></button>
+    </div>
+  </div>
+
+  <!-- 4 Speaker -->
+  <div class="card">
+    <h3>Pendrive</h3>
+    <div class="slider" id="slider4">
+      <button class="prev" onclick="prevSlide('slider4')"><</button>
+      <img src="/images/drive3.jpeg" class="slide active">
+      <img src="/images/drive2.jpeg" class="slide">
+      <img src="/images/drive3.jpeg" class="slide">
+      <button class="next" onclick="nextSlide('slider4')">></button>
+    </div>
+  </div>
+
+  <!-- 5 Smart Watch -->
+  <div class="card">
+    <h3>Camera</h3>
+    <div class="slider" id="slider5">
+      <button class="prev" onclick="prevSlide('slider5')"><</button>
+      <img src="/images/camera1.jpeg" class="slide active">
+      <img src="/images/camera2.jpeg" class="slide">
+      <button class="next" onclick="nextSlide('slider5')">></button>
+    </div>
+  </div>
+
+  <!-- 6 Television -->
+  <div class="card">
+    <h3>Laptop</h3>
+    <div class="slider" id="slider6">
+      <button class="prev" onclick="prevSlide('slider6')"><</button>
+      <img src="/images/laptop.jpeg" class="slide active">
+      <img src="/images/laptop2.jpeg" class="slide">
+      <img src="/images/laptop3.jpeg" class="slide">
+      <button class="next" onclick="nextSlide('slider6')">></button>
+    </div>
+  </div>
+
+</div>
+
+  </main>
+  <footer>
+    <ul>
+  <h4>Electronics</h4>
+  <li><a href="#"><i class="fa-solid fa-laptop"></i> Laptops</a></li>
+  <li><a href="#"><i class="fa-solid fa-mobile-screen"></i> Mobiles</a></li>
+  <li><a href="#"><i class="fa-solid fa-tv"></i> Televisions</a></li>
+</ul>
+
+<ul>
+  <h4>Home Appliances</h4>
+  <li><a href="#"><i class="fa-solid fa-blender"></i> Kitchen Appliances</a></li>
+  <li><a href="#"><i class="fa-solid fa-fan"></i> Fans</a></li>
+  <li><a href="#"><i class="fa-solid fa-kitchen-set"></i> Refrigerators</a></li>
+</ul>
+
+<ul>
+  <h4>Company</h4>
+  <li><a href="#"><i class="fa-solid fa-circle-info"></i> About Us</a></li>
+  <li><a href="#"><i class="fa-solid fa-briefcase"></i> Careers</a></li>
+  <li><a href="#"><i class="fa-solid fa-shield-halved"></i> Privacy Policy</a></li>
+</ul>
+  </footer>
+  <script src="/app.js"></script>
+
+  
+</body>
+</html>
