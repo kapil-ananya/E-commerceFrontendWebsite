@@ -22,12 +22,12 @@ function nextSlide(sliderId) {
 
 // products data which is shown on screen using renderProduct
 let items = [
-  { id: 1, name: "Laptop", price: 50000, image: "/images/laptop2.jpeg" },
-  { id: 2, name: "Phone", price: 70000, image: "/images/phone.jpeg" },
-  { id: 3, name: "Watch", price: 5000, image: "/images/watch1.jpeg" },
-  { id: 4, name: "Speaker", price: 3500, image: "/images/speaker1.jpeg" },
-  { id: 5, name: "Pendrive", price: 2100, image: "/images/drive2.jpeg" },
-  { id: 6, name: "Headphone", price: 4700, image: "/images/headphone2.jpeg" },
+  { id: 1, name: "Laptop", price: 50000, image: "../images/laptop2.jpeg" },
+  { id: 2, name: "Phone", price: 70000, image: "../images/phone.jpeg" },
+  { id: 3, name: "Watch", price: 5000, image: "../images/watch1.jpeg" },
+  { id: 4, name: "Speaker", price: 3500, image: "../images/speaker1.jpeg" },
+  { id: 5, name: "Pendrive", price: 2100, image: "../images/drive2.jpeg" },
+  { id: 6, name: "Headphone", price: 4700, image: "../images/headphone2.jpeg" },
 ];
 
 // show krna screen pr products ko 

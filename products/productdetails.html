@@ -4,8 +4,8 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>E-COMMERCE</title>
+     <link rel="stylesheet" href="productdetails.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
-    <link rel="stylesheet" href="/products/productdetails.css">
 </head>
 <body>
     <header>
@@ -18,13 +18,13 @@
     </div>
 
     <ul class="nav-links">
-      <li><a href="/index.html">Home</a></li>
-      <li><a href="/products/products.html">Products</a></li>
-      <li><a href="/cart/cart.html">Cart</a></li>
+
+<li><a href="../index.html">Home</a></li>
+<li><a href="products.html">Products</a></li>
+<li><a href="../cart/cart.html">Cart</a></li>
     </ul>
   </nav>
 </header>
-<body>
 <main>
     <h2>Product Details</h2>
     <div class="container">
@@ -66,6 +66,14 @@
 </ul>
   </footer>
 
-    <script src="../app.js"></script>
+    <script>
+      let product = JSON.parse(localStorage.getItem("selectedProduct"));
+
+if (product) {
+  document.getElementById("name").innerText = product.name;
+  document.getElementById("price").innerText = "₹" + product.price;
+  document.getElementById("image").src = product.image;
+}
+    </script>
 </body>
 </html>
