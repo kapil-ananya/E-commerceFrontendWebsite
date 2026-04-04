@@ -60,7 +60,7 @@ function renderProducts() {
 function viewProduct(id) {
   let product = items.find(item => item.id === id);
   localStorage.setItem("selectedProduct", JSON.stringify(product));
-  window.location.href = "/products/productdetails.html";
+  window.location.href = "productdetails.html";
 }
 
 function addToCart(name, price, image) {
